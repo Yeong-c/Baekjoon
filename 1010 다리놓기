@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+long long combination(int n, int r){
+    long long sum=1; //int로 선언하면 인테저 오버플로우가 발생 long long으로 선언해야함. int 약 -> 2*10^9 / long long 약 -> 9*10^18
+
+    for(int i=n, cnt=1 ; cnt<=r ; i--, cnt++){
+        sum*=i;
+        sum/=cnt;
+    }  // factorial로 시도하기엔 인테저 오버플로우가 발생하기 때문에 combination 함수를 제작했음.
+
+    return sum;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int testcase;
+    long long n, r;
+    cin>>testcase;
+
+    while(testcase--){
+        cin>>r>>n;
+        cout<<combination(n,r)<<"\n";
+    }
+    return 0;
+}
