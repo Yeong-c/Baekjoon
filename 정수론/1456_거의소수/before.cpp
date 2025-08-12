@@ -1,3 +1,19 @@
+/*
+
+배운점 -> 
+1.integer overflow 고려를 하자 
+2. input의 범위, 제한시간을 토대로 시간 복잡도를 예측하고 그에 맞는 알고리즘 접근법 생각을하자 
+3. 엣지 케이스를 잘 보자... 특수한 경우를 보는 능력, 디버깅 능력이 부족함
+4. 배열의 index는 타입제한이없음
+*/
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <vector>
 #include <cmath>
